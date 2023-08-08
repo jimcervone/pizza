@@ -21,6 +21,13 @@ const utils = {
         }
         return {x,y};
     },
+    oppositeDirection(direction) {
+        if (direction === "left") { return "right" }
+        if (direction === "right") { return "left" }
+        if (direction === "up") { return "down" }
+        return "up"
+    },
+
     emitEvent(name, detail) {
         // native browser functionality coming up!
         const event = new CustomEvent(name, {
