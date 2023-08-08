@@ -29,7 +29,7 @@ class GameObject {
     async doBehaviorEvent(map) {
 
         // don't do anything if there is a more important cuscene or I don't have a config
-        if (map.isCutscenePlaying || this.behaviorLoop.length === 0) {
+        if (map.isCutscenePlaying || this.behaviorLoop.length === 0 || this.isStanding) {
             return;
         }
 
