@@ -145,11 +145,22 @@ window.OverworldMaps = {
             })
         },
         walls: {
+            // the table in the middle
             // "16,16": true
             [utils.asGridCoord(7,6)]: true,
             [utils.asGridCoord(8,6)]: true,
             [utils.asGridCoord(7,7)]: true,
-            [utils.asGridCoord(8,7)]: true
+            [utils.asGridCoord(8,7)]: true,
+            // upper walls
+            [utils.asGridCoord(1,3)]: true,
+            [utils.asGridCoord(2,3)]: true,
+            [utils.asGridCoord(3,3)]: true,
+            [utils.asGridCoord(4,3)]: true,
+            [utils.asGridCoord(5,3)]: true,
+            [utils.asGridCoord(6,4)]: true,
+            [utils.asGridCoord(8,4)]: true,
+            [utils.asGridCoord(9,3)]: true,
+            [utils.asGridCoord(10,3)]: true,
         },
         cutsceneSpaces: {
             [utils.asGridCoord(7,4)]: [
